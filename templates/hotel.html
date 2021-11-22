@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <title>코쟁이 제주 관광정보</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- services와 clusterer, drawing 라이브러리 불러오기 -->
+    <script type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1b158fce8188c11ca6a573651b024734&libraries=services,clusterer,drawing"></script>
+
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="static/any_style.css">
+
+    <!-- JS -->
+    <script src="../static/js/hotel_js.js"></script>
+
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="home_box">
+            <img style=" cursor: pointer;" onclick="location.href='main'" class="home_link"
+                 src="static/main_image/logo.jpg" width="100" height="39" border-radius="5"
+                 alt="logo_img">
+            <!-- home 링크 삽입 필요-->
+        </div>
+        <navi>
+            <li><a href="travel">Travel</a></li>
+            <li><a href="food">Food</a></li>
+            <li><a href="hotel">Hotel</a></li>
+        </navi>
+    </div>
+    <!--    header end-->
+    <div class="section">
+        <ul class="left_section">
+            <div class="contents-body">
+
+            </div>
+        </ul>
+
+
+        <div class="map_box">
+            <div class="map_container">
+                <div id="map">
+                </div>
+            </div>
+        </div>
+
+        </ul>
+    </div>
+
+</div>
+<!--    상단 navi-->
+
+
+</body>
+</html>

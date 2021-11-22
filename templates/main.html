@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head class="clearfix">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <title>코쟁이 제주 관광정보</title>
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="static/main_style.css">
+
+
+</head>
+
+
+<body>
+
+<div class="wrap">
+    <div class="header">
+        <div class="home_box">
+            <img style=" cursor: pointer;" onclick="location.href='main'" class="home_link"
+                 src="static/main_image/logo.jpg" width="100" height="39" border-radius="5"
+                 alt="logo_img">
+            <!-- home 링크 삽입 필요-->
+        </div>
+        <navi>
+            <li><a href="travel">Travel</a></li>
+            <li><a href="food">Food</a></li>
+            <li><a href="hotel">Hotel</a></li>
+        </navi>
+    </div>
+    <div class="main_page_box">
+        <div class="intro_bg">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/main_welcome_bg2.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <ul class="left_section">
+            <li style=" cursor: pointer;" onclick="location.href='travel'" class="card">
+                <div class="travel">
+                    <div class="card-body">
+                        <h1 class="card-title">Travel</h1>
+                        <h3 class="card-title">여행</h3>
+                    </div>
+                </div>
+            </li>
+            <li style=" cursor: pointer;" onclick="location.href='hotel'" class="card">
+                <div class="hotel">
+                    <div class="card-body">
+                        <h1 class="card-title">Hotel</h1>
+                        <h3 class="card-title">숙박</h3>
+                    </div>
+                </div>
+            </li>
+            <li style=" cursor: pointer;" onclick="location.href='food'" class="card">
+                <div class="food">
+                    <div class="card-body">
+                        <h1 class="card-title">Food</h1>
+                        <h3 class="card-title">맛집</h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!--        left_section end-->
+        <div class="right_section">
+            <div class="festival">
+                <div class="event_main">Event & Festival</div>
+            </div>
+            <div class="event_list">
+                <ul class="event_cards">
+                    <li class="event_container">
+                        <div class="card">
+                            <div class="event_img">
+                                <img src="static/main_image/event1.jpg">
+                            </div>
+                            <div class="top-text">
+                                <div class="name">
+                                    9.81파크: X리그
+                                </div>
+                                <p>
+                                    21.03.01 ~ 21.11.07
+                                </p>
+                            </div>
+                            <div class="bottom-text">
+                                <div class="text">
+                                    애월읍 평화로 인근에 위치한 9.81파크는 새로운 놀이, 무동력레이싱(Gravity Racing)을 비롯한 다양한 액티비티와 이벤트를 즐길 수 있는
+                                    종합유원시설이다.
+                                    메인 액티비티 RACE 981은 천혜의 제주 풍경을 감상하며 중력가속도만으로 스피드를 즐기는 다운힐(down-hill)레이싱이다. 몸으로 체험하고,
+                                    9.81 app을 통해
+                                    제공되는 탑승영상 등의 데이터와 게이미피케이션으로 서로가 연결되는 스포츠형 액티비티라 할 수 있다.
+                                    그 중에서 마스터 라이선스를 획득한 후 X리그의 탑 랭커가 되면, 연말에 진행되는 GROC(Gravity Race Of Champions)에 참가할 수
+                                    있는 자격이
+                                    주어진다.
+                                </div>
+                                <div class="btn">
+                                    <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000011153&menuId=DOM_000001718007000000#">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event_container">
+                        <div class="card">
+                            <div class="event_img">
+                                <img src="static/main_image/event2.jpg">
+                            </div>
+                            <div class="top-text">
+                                <div class="name">
+                                    휴애리 핑크뮬리축제
+                                </div>
+                                <p>
+                                    21.09.10 ~ 21.11.307
+                                </p>
+                            </div>
+                            <div class="bottom-text">
+                                <div class="text">
+                                    휴애리 핑크뮬리 축제는 서귀포시 남원읍 신례리에 위치한 휴애리의 대표 가을축제 이다. 올해로 4번째인 이번 축제는 9월 10일부터 시작 예정이며,
+                                    예년과 달리 공원
+                                    곳곳에 더욱 풍성하게 준비된 핑크뮬리가 모든 방문자들을 반기고 있다.
+                                    특히, 파란 가을 하늘이 인상적인 제주에서 핑크빛 핑크뮬리와 함께 멋진 인생사진을 남겨볼 수 있어 벌써부터 많은 분들의 관심을 얻고 있다. 또한 작년과
+                                    또 다른
+                                    특별한 풍경으로 핑크뮬리를 준비하여 답답한 일상에서 위로 를 받고 싶은 분들에게 더욱 매력적인 시간이 될 것이다.
+                                    휴애리 핑크뮬리 축제에는 핑크뮬리 뿐만 아니라 감귤체험도 함께 해 볼 수 있어, 아이를 동반한 가족에게는 교육과 학습의 시간을, 제주감귤을 좋아하시는
+                                    분들에겐 행복한
+                                    시간이 될 것이다.
+                                </div>
+                                <div class="btn">
+                                    <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000009099&menuId=DOM_000001718007000000#p1">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event_container">
+                        <div class="card">
+                            <div class="event_img">
+                                <img src="static/main_image/event3.jpg">
+                            </div>
+                            <div class="top-text">
+                                <div class="name">
+                                    컬러풀산지
+                                </div>
+                                <p>
+                                    21.09.03 ~ 21.11.27
+                                </p>
+                            </div>
+                            <div class="bottom-text">
+                                <div class="text">
+                                    제주시 산지교 옆 산지천에 알록달록 화려한 작은 한라산이 세워졌다.
+                                    제주관광공사는 9월3일(금)부터 11월 27일(토)까지 3개월간 탐라문화광장 일대에서 코로나19 장기화로 침체된 탐라문화광장 일대를 환하게 밝혀 활력을
+                                    불어넣기 위해 비대면 경관조성 사업인 「산지에 색을 입히다, 컬러풀산지(컬러풀산지)」를 개최한다.
+                                    9월 26일(일)까지 개최되는 메인 프로그램 ‘힐링 미디어 넷 아트(Healing Media Net Art)’는 제주도와 함께 숨을 쉬고 있는 한라산과
+                                    오름을
+                                    모티브로 한 미디어아트 작품으로, 코로나19로 지친 우리들 마음의 휴식과 힐링을 위해 기획 전시되었다. 이 작품에는 2018 평창동계올림픽 문화올림픽
+                                    프로그램인 천년향 제작 총괄을 했던 한경아 연출감독과 평창동계올림픽 개/폐막식을 총괄했던 기술감독이 참여하고 있다.
+                                    ‘한라산의 외출’이라는 주제로 만들어진 이번 작품은 제주의 비와 바람에 견딜 수 있는 제주다운 소재인 그물과 한지를 활용한 15m 높이의 한라산과 그
+                                    주변의 오름을 형상화한 대형 아트워크(artwork)로, 화산폭발과 용암이 쌓이면서 만들어진 한라산의 탄생을 이야기하는 오프닝을 시작으로 한라산의 봄,
+                                    여름, 가을, 겨울의 이미지를 아름다운 음악, 영상과 조명으로 연출하고 있다.
+                                    그 밖에도 11월 27일(토)까지 탐라문화광장 일대에 스트링전구를 설치하여 야간 산책이 가능하도록 하고 있으며, 산지천갤러리에서는 이준천 여행스케치
+                                    작가(세계일주여행자, 일러스트레이터)의 산지천컬러링맵을 배포하고 있다.
+                                </div>
+                                <div class="btn">
+                                    <a href=https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000011954&menuId=DOM_000001718007000000#p1>Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event_container">
+                        <div class="card">
+                            <div class="event_img">
+                                <img src="static/main_image/event4.png">
+                            </div>
+                            <div class="top-text">
+                                <div class="name">
+                                    세상에 E-RUN 트립
+                                </div>
+                                <p>
+                                    21.09.13 ~ 21.09.27
+                                </p>
+                            </div>
+                            <div class="bottom-text">
+                                <div class="text">
+                                    세상에 E-RUN 트립(이하 ‘이런 트립’)은 친환경+스포츠+미션이 결합한 신개념 여행콘텐츠로 제주의 환경보호를 위해 도내 기업 및 단체가 힘을 모아
+                                    건강은 물론 환경과
+                                    지역 사회까지 생각하는 제주 관광 프로젝트 사업이다.
+                                    E-RUN이란 Eco-Run의 줄임말로 제주의 지속가능한 여행, 친환경 여행 기반 조성을 위해 달려간다는 의미이다.
+                                    이런 트립은 제주특별자치도 주최, 제주관광공사가 주관하며, 제주지방해양경찰청, 한국공항공사 제주지역본부, 티웨이항공, 고용노동부 사회적기업 푸른컵,
+                                    제주해양환경단체
+                                    플로빙코리아, 지구별약수터 환경캠페인을 운영하는 제주환경단체 작은 것이 아릅답다, 사회적기업 함께하는 그날협동조합이 운영하는 지구별가게, 제주대
+                                    창업동아리 업사이클링 브랜드
+                                    도담스튜디오가 참여한다.
+                                </div>
+                                <div class="btn">
+                                    <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000011775&menuId=DOM_000001718007000000#p1">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event_container">
+                        <div class="card">
+                            <div class="event_img">
+                                <img src="static/main_image/event5.jpg">
+                            </div>
+                            <div class="top-text">
+                                <div class="name">
+                                    마노르블랑 핑크뮬리축제
+                                </div>
+                                <p>
+                                    21.09.10 ~ 21.11.30
+                                </p>
+                            </div>
+                            <div class="bottom-text">
+                                <div class="text">
+                                    마노르블랑은 서귀포시에 위치한 가든 카페이다. 이곳은 작년에 이어 올해에도 핑크뮬리축제를 맞이하고 있다. 축제기간은 9월부터 11월까지이다. 우리나라
+                                    최남단에 위치하고
+                                    있으며 핑크뮬리가 우리나라에서 가장 빨리 개화중이다. 9월에는 사랑과 정성으로 가꾸어진 핑크뮬리를 마노르블랑에서 볼 수 있다. 또한 산방산과 송악산
+                                    사이로 형제섬과
+                                    사계앞바다가 보이는 환상적인 조망은 마노르블랑에서만 볼 수 있다. 환상적인 조망과 함께 핑크뮬리 인생샷을 남길 수 있는 다양한 산책로와 포토존이
+                                    준비되어 있고 야외
+                                    잔디정원에서는 피아노 연주 버스킹을 즐길 수 있다. 이 곳 마노르블랑은 지금 핑크뮬리축제의 향연이 펼쳐지고 있다.
+                                </div>
+                                <div class="btn">
+                                    <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000008995&menuId=DOM_000001718007000000#p1">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event_container">
+                        <div class="card">
+                            <div class="event_img">
+                                <img src="static/main_image/event6.jpg">
+                            </div>
+                            <div class="top-text">
+                                <div class="name">
+                                    70년 만의 서귀포 귀향
+                                </div>
+                                <p>
+                                    21.09.05 ~ 22.03.06
+                                </p>
+                            </div>
+                            <div class="bottom-text">
+                                <div class="text">
+                                    이건희 컬렉션 이중섭 특별전 <70년 만의 서귀포 귀향>은 삼성家로부터 기증받은 이중섭 원화 작품 12점(섶섬이 보이는 풍경, 해변의 가족 등)과 함께
+                                    이중섭 화가의
+                                    예술세계와 삶, 그리고 이중섭미술관의 역사를 다양한 자료로 소개하는 특별전시이다. 기증받은 원화작품을 활용한 미디어아트(영상)도 상영예정으로, 시각을
+                                    넘어 다채롭게 이중섭
+                                    원화 작품을 감상할 수 있다.
+
+                                    서귀포와 이중섭 화백의 인연은 한국전쟁이 한창이던 1951년 1월 가족과 함께 피란을 오면서 시작되었다. 1년 남짓 서귀포에 머무르는 동안 이중섭
+                                    화백은
+                                    서귀포의 환상,
+                                    섶섬이 보이는 풍경,
+                                    바닷가의 아이들 등 유명 작품들을 창작하였다. 이번 <70년 만의 서귀포 귀향>은
+                                    섶섬이 보이는 풍경을 비롯하여 주옥같은 이중섭 화백의 작품 감상은 물론, 그의 삶과 예술세계를 느낄 수 있는 좋은 기회가 될 것이다.
+                                </div>
+                                <div class="btn">
+                                    <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000011874&menuId=DOM_000001718007000000#p1">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--        right_section end-->
+    </div>
+</div>
+
+
+</body>

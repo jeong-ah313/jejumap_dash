@@ -1,0 +1,257 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+.wrap{
+    position: relative;
+    margin: auto;
+    width: 90%;
+}
+/*<-- !*page css *! -->*/
+
+
+.header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 50px;
+    border-bottom: 1px solid gray;
+}
+.header .home_box {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.header > navi {
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 74px;
+    width: calc(1440px - 300px);
+}
+
+.header > navi > li {
+    margin-left: 84px;
+}
+
+.header > navi > li > a {
+    color: black;
+}
+/*header css end*/
+
+.main_page_box {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+
+.main_page_box .intro_bg {
+    background-image: url("../static/main_image/main_welcome_bg2.jpg");
+    /*이미지 url 변경 필요*/
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*intro css end*/
+
+
+.section {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+}
+
+.section > div {
+    flex: 1;
+}
+/*all section css end*/
+
+.left_section {
+    display: flex;
+    width: 50%;
+    height: 500px;
+    margin: auto;
+}
+.right_section{
+    background-color: white;
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.left_section > li {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.left_section .card > div {
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.left_section .card > div > .card-body {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 100%;
+    top: 70%;
+}
+.left_section .card > div > div> .card-title{
+    color: white;
+    text-align: right;
+}
+
+.left_section .card .travel {
+    background-image: url("../static/main_image/maxresdefault.jpg");
+}
+.left_section .card .food {
+    background-image: url("../static/main_image/buger.jpg");
+}
+.left_section .card .hotel {
+    background-image: url("../static/main_image/jeju_hotel.jpg");
+}
+/*left css end*/
+
+
+.right_section .festival {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.right_section .event_main {
+    font-size: 30px;
+    height: 45px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #e74c3c;
+    color: white;
+}
+
+
+.right_section .event_list {
+    width: 100%;
+    height: 500px;
+    flex: 1;
+}
+
+.right_section .event_list > ul {
+}
+
+/*event_container*/
+.event_container {
+    width: 50%;
+    float: right;
+    display: flex;
+}
+
+.event_container .card {
+    height: 100px;
+    width: 100%;
+    background: white;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.event_container .card:hover {
+    height: 110%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event_container .card .event_img {
+    height: 50px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.event_container .card .event_img img {
+    height: 110%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card .top-text {
+    padding: 6px;
+}
+
+.card .top-text .name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.card .top-text p {
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+    line-height: 25px;
+}
+
+.card .bottom-text {
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.card:hover .bottom-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .bottom-text .text {
+    text-align: justify;
+}
+
+.card .bottom-text .btn {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.card .bottom-text .btn a {
+    text-decoration: none;
+    background: #e74c3c;
+    color: #f2f2f2;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+}
+
+.bottom-text {
+    font-size: 5px;
+}
+
+@media screen and (max-width: 978px) {
+    .event_container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
